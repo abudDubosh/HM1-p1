@@ -1,0 +1,26 @@
+mkdir JavaScriptHM1
+cd JavaScriptHM1
+touch blank
+vim greetings.txt
+a: for i in {1..5}; do echo "hello"; done
+
+console.log(y)
+:wq
+
+touch 1.txt
+touch 2.txt
+touch 3.txt
+touch 4.txt
+touch 5.txt
+cat greetings.txt > /dev/clipboard
+for i in {1..5};do cat /dev/clipboard > $i.txt;done
+
+touch pets.txt
+echo "cat" > pets.txt
+echo "dog" >> pets.txt
+echo "hamster" >> pets.txt
+touch commands.txt
+echo "cat" > commands.txt
+echo "ls" >> commands.txt
+echo "pwd" >> commands.txt
+grep -vf commands.txt pets.txt > lovelyCommands.txt
