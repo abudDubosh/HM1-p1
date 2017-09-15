@@ -18,9 +18,9 @@ colorCar("red");
 3.Create an object and a function that takes the object as a parameter and prints out all of its names and values.
 **********/
 let class = {
-	1stStudent : 'Nick',
-	2ndStudent : 'Sam',
-	3rdStudent : 'Raul'
+	FirstStudent : 'Nick',
+	SecondStudent : 'Sam',
+	ThirdStudent : 'Raul'
 }
 function printClass(obj){
 	for(key in obj){
