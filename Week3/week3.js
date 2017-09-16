@@ -40,7 +40,7 @@ let books_info = {
 
 function booksId(books) {
     let unlist = document.createElement('ul');
-     for(i in my_books){
+     for(i in books){
           let list = document.createElement('li');
           list.setAttribute('id',books[i].id);
           let title = document.createElement('h1');
