@@ -22,37 +22,36 @@
 
 
 
-let books_info={
+let books_info = {
     b1 : { book_title: "The Secret Agent", author : "Joseph Conrad", lang: "English", id: "secret_agent"},
-    b2 : {book_title:"A Horseman in the Sky", author: "Ambrose Bierce",lang: "English", id: "horseman_in_sky"},
+    b2 : {book_title: "A Horseman in the Sky", author: "Ambrose Bierce", lang: "English", id: "horseman_in_sky"},
     b3 : { book_title: "The Last Leaf", author : "O. Henry", lang: "English", id: "last_leaf"},
     b4 : {book_title: "Strangers on a Train", author: "Patricia Highsmith", lang: "English", id: "strangers_on_train"},
-    b5 : {book_title: "The Boy on Graves - End Road", author : "Caty Weaver", lang:"English", id: "end_road"},
-    b6 : {book_title: "Pigs is Pigs ", author: "Ellis Parker Butler", lang: "English", id: "pigs_is_pigs"},
-    b7 : {book_title: "Journey to the Centre of the Earth ", author:"Penny Dolan", lang: "English", id: "journey_center_earth"},
-    b7 : {book_title:"The Prisoner of Zenda", author: "Anthony Hope", lang: "English", id: "prisoner_of_zenda"},
+    b5 : {book_title: "The Boy on Graves - End Road", author : "Caty Weaver", lang: "English", id: "end_road"},
+    b6 : {book_title: "Pigs is Pigs ", author: "Ellis Parker Butler", lang: "English", id: "pigs_is_pigs" },
+    b7 : {book_title: "Journey to the Centre of the Earth ", author: "Penny Dolan", lang: "English", id: "journey_center_earth"},
+    b7 : {book_title: "The Prisoner of Zenda", author: "Anthony Hope", lang: "English", id: "prisoner_of_zenda"},
     b9 : {book_title: "A Princess of Mars", author: "Edgar Rice Burroughs", lang: "English", id: "princess_of_mars"},
-    b10 :{book_title: "Soar (The Empire Chronicles, #1)", author: "Alyssa Rose Ivy", lang: "English", id: "soar"}   
-}
+    b10 : {book_title: "Soar (The Empire Chronicles, #1)", author: "Alyssa Rose Ivy", lang: "English", id: "soar"}}
 
 //5-Now change the function you used to display the book ID's in a list to take the actual information about the book from the object and display that. Make sure you choose the right html elements for each piece of info, for instance, a heading for the title.
 
 
 
-function booksId(books){
-     let ul = document.createElement('ul');
+function booksId(books) {
+    let unlist = document.createElement('ul');
      for(i in my_books){
-          let li = document.createElement('li');
-          li.setAttribute('id',books[i].id);
+          let list = document.createElement('li');
+          list.setAttribute('id',books[i].id);
           let title = document.createElement('h1');
           let author = document.createElement('h2');
           let language = document.createElement('h3');
           title.appendChild(document.createTextNode(books[i].title));
           author.appendChild(document.createTextNode(books[i].author));
           language.appendChild(document.createTextNode(books[i].language));
-          li.appendChild(title).appendChild(author).appendChild(language).appendChild(item);
+          list.appendChild(title).appendChild(author).appendChild(language).appendChild(item);}
           
-     return ul;
+     return unlist;
 }                               //?//            //?//
 ///document.getElementById('books').appendChild(booksId(books));
 
